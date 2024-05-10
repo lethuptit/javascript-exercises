@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Library</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="app-title">
+        <img
+          id="library-icon"
+          src="./images/open-book.png"
+          alt="open-book-symbol"
+          width="50px"
+          height="50px"
+        />
+        <h1>My Library</h1>
+        <div class="add-book-button">
+            <button id="button-40" role="button" onclick="togglePopup()">
+              Add New Book
+            </button>
+          </div>
+      </div>      
+    </div>    
+    <div>
+      <div class="insert-book-container" id="popup">
+        <h2 id="insert-book-title-popup">Insert New Book</h2>
+        <input
+          type="text"
+          id="title"
+          name="title"
+          placeholder="Title"
+          required
+        />
+        <input
+          type="text"
+          id="author"
+          name="author"
+          placeholder="Author"
+          required
+        />
+        <input
+          type="number"
+          id="pages"
+          name="pages"
+          placeholder="   Pages"
+          required
+        />
+        <div class="button-container">
+          <button type="button" id="submit" onclick="addBookToLibrary()">
+            Submit
+          </button>
+          <button type="button" id="cancel" onclick="clearInputs()">
+            Cancel
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="backdrop" id="backdrop"></div>
+    <div class="mainLibrary"></div>
+    <script src="myBook.js"></script>
+  </body>
+</html>
