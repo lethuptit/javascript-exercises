@@ -1,0 +1,45 @@
+.root{
+    --table-background-color: rgb(255, 255, 255);
+}
+
+html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  form > label{
+    width: 250px;
+    display: inline-block;
+    text-align: right;
+    float: left;
+  }
+  
+  h1#hello.hh{
+    color: blue;
+    text-align: center;
+  }
+  
+  #hello{
+    color: pink;
+  }
+
+
+
+  table, th, td {
+    border: 1px solid grey;
+    border-collapse: collapse;
+    padding: 0 20px;
+  }
+  
+  #employee-table th{
+    margin-top: 10px;
+    background-color: #aad473;
+    width: fit-content;    
+  }
+  form{
+    margin: 10px 0;
+  }
+
+  
+  
+ 

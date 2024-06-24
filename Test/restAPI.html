@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <style>
+        form label {
+            width: 80px;
+            margin-right: 10px;
+            display: inline-block;
+            text-align: right;
+            /* float: left; */
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="getTableContent()">Get Data</button>
+    <h1 class="hh" id="hello">REST API PRACTICE</h1>
+    <h2 style="color:green;text-align: left;">Add new employee</h2>
+    <form action="" method="POST">
+        <div>
+            <input type="number" id="id" placeholder="Empoyee ID">
+            <input type="text" id="name" placeholder="Empoyee Name">
+            <input type="text" id="salary" placeholder="Empoyee Salary">
+            <input type="text" id="age" placeholder="Empoyee Age">
+            
+        </div>
+        <div>
+            <button type="submit" id='addBnt'> Add</button>
+        </div>
+    </form>
+    <table id='employee-table'>
+        <thead></thead>
+        <tbody></tbody>
+    </table>
+
+
+
+    <script src="restAPI.js">
+
+    </script>
+</body>
+
+</html>
