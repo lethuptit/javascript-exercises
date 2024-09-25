@@ -35,6 +35,7 @@
     ]
   },
   "dependencies": {
+    "javascript-exercises": "file:",
     "xmlhttprequest": "^1.8.0"
   }
 }
